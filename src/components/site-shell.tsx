@@ -116,7 +116,7 @@ function IconLink({ href, label, icon }: { href: string; label: string; icon: Re
 export function Footer() {
   return (
     <footer className="border-t border-gold/20 bg-ink text-ivory">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-[1.2fr_2fr] lg:px-8">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1.1fr_1fr_1.4fr] lg:px-8">
         <div>
           <p className="font-serif text-3xl font-semibold">ETHNOVERA GLOBAL</p>
           <p className="mt-3 max-w-sm text-sm leading-6 text-sand">
@@ -128,7 +128,7 @@ export function Footer() {
             <span>LinkedIn</span>
           </div>
         </div>
-        <div className="grid gap-8 sm:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-3 lg:grid-cols-1">
           {[
             ["Marketplace", "Shop", "Categories", "Wishlist", "Gift Cards"],
             ["Company", "About", "Stories", "Contact", "Careers"],
@@ -143,6 +143,26 @@ export function Footer() {
               </ul>
             </div>
           ))}
+        </div>
+        <div>
+          <h2 className="text-sm font-bold uppercase tracking-[0.24em] text-gold">Registered Office</h2>
+          <div className="mt-4 space-y-3 text-sm leading-6 text-sand">
+            <p className="font-semibold text-ivory">ETHNOVERA GLOBAL PRIVATE LIMITED</p>
+            <p>
+              Phone: <a href="tel:7359749940" className="text-gold transition hover:text-sand">7359749940</a>
+            </p>
+            <address className="not-italic">
+              Floor No.: 2ND FLOOR<br />
+              Building No./Flat No.: 212, BLDG NO 03<br />
+              Name Of Premises/Building: 86Central By Crystal Group<br />
+              Road/Street: Ghatkopar Andheri Link Road<br />
+              Locality/Sub Locality: Ghatkopar West<br />
+              City/Town/Village: Mumbai<br />
+              District: Mumbai Suburban<br />
+              State: Maharashtra<br />
+              PIN Code: 400086
+            </address>
+          </div>
         </div>
       </div>
     </footer>
