@@ -128,11 +128,9 @@ export function Footer() {
             <span>LinkedIn</span>
           </div>
         </div>
-        <div className="grid gap-8 sm:grid-cols-3 lg:grid-cols-1">
+        <div className="grid gap-8">
           {[
-            ["Marketplace", "Shop", "Categories", "Wishlist", "Gift Cards"],
-            ["Company", "About", "Stories", "Contact", "Careers"],
-            ["Seller Tools", "Onboarding", "Dashboard", "Verification", "Analytics"]
+            ["Marketplace", "Shop", "Categories", "Wishlist", "Gift Cards"]
           ].map(([title, ...items]) => (
             <div key={title}>
               <h2 className="text-sm font-bold uppercase tracking-[0.24em] text-gold">{title}</h2>
